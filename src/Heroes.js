@@ -13,10 +13,10 @@ function Heroes(){
     const [names, setNames] = useState(nameItem);
 
     return(
-        names.map((item) => {
+        names.map((item, index) => {
             return(
-                <ul>
-                    <li>{item}</li>
+                <ul key={index}>
+                    <li >{item}</li>
                 </ul>
             )
         })
